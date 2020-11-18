@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meal Planner</title>
+</head>
+<body>
+    <script src="src/js/meals.js"></script>
+
+    <h1>Meals</h1>
+    <h2>Add a meal</h2>
+    Meal name:
+    <input type="text" id="mealName" name="mealName"><br /><br />
+    How many ingredients?<br />
+    <input type="text" id="ingredients" name="ingredients">
+    <a href="#" id="filldetails" onclick="addInput()">Add Ingredients (max 15)</a>
+
+    <div id="container"></div>
+    <input id="submitMeal" type="submit" onclick="sendData()">
+    <div id="meals">
+        <h2>Your meals</h2>
+        <input id="getMeals" type="submit" onclick="getMeals()" value="Retrieve meals">
+    </div>
+</body>
+</html>
